@@ -229,17 +229,9 @@ class RouteController {
         `
         <h1>Assignment for RedPositive Service OPC</h1>
         <h2>Table data exported</h2>
-        <p>Assignment by: HIRAK ROY</p>
+        <p>Assignment by: Sahil Chauksey</p>
   
-        <a href="https://www.linkedin.com/in/royhirakp">LinkedIN</a>
-        <br />
-        <a href=" https://github.com/royhirakp">gitHub</a
-        ><br />
-  
-        <a href="mailto:hirakroy@mail.com">hirakroy@mail.com</a
-        ><br />
-        <a href="mailto:royhirakp@gmail.com">royhirakp@gmail.com</a
-        >
+     
         <br />
         <br />
         <br />
@@ -256,7 +248,7 @@ class RouteController {
 
       await transporter.sendMail(
         {
-          from: "royhiark@gmail.com", // sender address
+          from: "swissaklo@gmail@gmail.com", // sender address
           to: "info@redpositive.in", // list of receivers
           subject: "Assignment for RedPositive Service OPC",
           text: `Assignment for RedPositive Service OPC`, // plain text body
@@ -266,7 +258,7 @@ class RouteController {
         (error, info) => {
           if (error) {
             console.log("error form hereeee====", error.code);
-            //error for is the mail id is wrong
+         
             if (error.code === "EENVELOPE") {
               return res.status(400).json({
                 status: "error",
